@@ -9,9 +9,11 @@
     "test:unit": "vue-cli-service test:unit"
   },
   "dependencies": {
+    "chart.js": "^2.8.0",
     "core-js": "^2.6.5",
     "vee-validate": "^2.2.7",
     "vue": "^2.6.10",
+    "vue-chartjs": "^3.4.2",
     "vue-content-loading": "^1.6.0",
     "vue-moment": "^4.0.0",
     "vue-router": "^3.0.3",

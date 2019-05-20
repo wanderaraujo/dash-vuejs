@@ -13,13 +13,12 @@ export default {
 
 <style>
 .footer {
-  position: fixed;
   left: 0;
   bottom: 0;
   width: 100%;
-  background-color: #EBEAEB;
+  background-color: #eee;
   color: white;
   text-align: center;
-  padding-bottom: 20px;
+  padding: 40px;
 }
 </style>

@@ -29,9 +29,13 @@ export default {
 
 <style scoped>
 
+*{
+  font-size: 17px;
+  font-weight: 500;
+}
+
 .activities li {
   font-size: 14px;
-  font-weight: 500;
   border-radius: 3px;
   border: 1px solid #D4D9E3;
   background-color: #FFFFFF;
@@ -39,34 +43,23 @@ export default {
 }
 
 .date-at {
-  font-size: 16px;
-  font-weight: 500;
   padding-right: 15px;
   color: #808082;
 }
 
 .info-at {
-  font-size: 15px;
-  font-weight: 500;
   color: #5D699A;
-}
-
-.event {
-  font-size: 16px;
-  font-weight: 500;
 }
 
 .company {
   text-decoration: line-through;
   font-size: 16px;
-  font-weight: 500;
   padding-right: 6px;
   padding-left: 138px;
   color: #808082;
 }
 
 .activities li a {
-  font-weight:500;
   text-decoration:none;
   color: #5D699A;
 }

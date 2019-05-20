@@ -4,11 +4,11 @@
     <div class="row">
       <Navigation />
     </div>
-    <div class="row">
+    <div class="row last-row">
       <SideMenu />
         <router-view/>
     </div>
-    <!-- <Footer /> -->
+    <Footer />
   </div>
 </template>
 
@@ -16,15 +16,15 @@
 import Header from '@/components/Header.vue'
 import Navigation from '@/components/Navigation.vue'
 import SideMenu from '@/components/SideMenu.vue'
-// import Footer from '@/components/Footer.vue'
+import Footer from '@/components/Footer.vue'
 
 export default {
   name: 'App',
   components: {
     Header,
     Navigation,
-    SideMenu
-    // Footer
+    SideMenu,
+    Footer
   }
 }
 </script>
@@ -45,6 +45,10 @@ body{
 
 .dash{
   padding-top: 50px;
+  padding-bottom: 80px;
+}
+
+.last-row {
   padding-bottom: 80px;
 }
 
