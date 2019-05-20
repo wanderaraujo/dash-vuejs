@@ -1,0 +1,7 @@
+[ 
+    { "company": "Facebook", "location": "info@facebook.com", "category": { "img": "Active Directory.png", "info": "DNS" }, "spend": 1 },
+    { "company": "Azure", "location": "azure@ms.com", "category": { "img": "Google Code.png", "info": "Content Delivery" }, "spend": 3 },
+    { "company": "Apple", "location": "welcome@apple.com", "category": { "img": "Upload To Cloud.png", "info": "SaaS" }, "spend": 4 },
+    { "company": "Walmart", "location": "hi@walmart.com", "category": { "img": "Youtube.png", "info": "Video Plataform" }, "spend": 2 },
+    { "company": "Humana", "location": "hey@humana.com", "category": { "img": "Administrative Tools.png", "info": "Hosting" }, "spend": 6 }
+]
