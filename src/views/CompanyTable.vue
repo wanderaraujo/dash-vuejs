@@ -1,11 +1,10 @@
 <template>
   <div class="col-7 col-s-9 ">
     <div>
-      {{searchQuery}}
-      <Input type="text" placeholder="Search" v-model="searchQuery" size="100%" class="input-search"/>
+      <Input type="text" placeholder="Search" size="100%" class="input-search" v-model="query" @input="updateInput"/>
       <Table :data="gridData"
       :columns="gridColumns"
-      :filter-key="searchQuery"/>
+      :filter-key="$store.getters.searchQuery"/>
     </div>
   </div>
 </template>
@@ -18,9 +17,14 @@ export default {
   name: 'CompanyTable',
   data () {
     return {
-      searchQuery: '',
+      query: '',
       gridColumns: ['company', 'location', 'category', 'spend'],
       gridData: this.$store.getters.companyTable
+    }
+  },
+  methods: {
+    updateInput: function () {
+      this.$store.dispatch('updateFilter', this.query)
     }
   },
   components: {

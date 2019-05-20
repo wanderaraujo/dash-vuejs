@@ -10,6 +10,7 @@ export default new Vuex.Store({
   state: {
     company: Object,
     url: 'Company Data',
+    searchQuery: '',
     companyTable: table,
     activities: activity
   },
@@ -19,6 +20,9 @@ export default new Vuex.Store({
     },
     setNavigation (state, payload) {
       state.url = payload
+    },
+    setFilter (state, payload) {
+      state.searchQuery = payload
     }
   },
   actions: {
@@ -39,6 +43,10 @@ export default new Vuex.Store({
     updateUrl ({ commit }, payload) {
       const newUrl = payload
       commit('setNavigation', newUrl)
+    },
+    updateFilter ({ commit }, payload) {
+      const query = payload
+      commit('setFilter', query)
     }
   },
   getters: {
@@ -50,6 +58,9 @@ export default new Vuex.Store({
     },
     urlActive (state) {
       return state.url
+    },
+    searchQuery (state) {
+      return state.searchQuery
     }
   }
 })

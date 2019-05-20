@@ -1,7 +1,7 @@
 <template>
   <div>
     <p :for=label class="label-input" v-show="label"> {{ label }} </p>
-    <input :type=type :placeholder=placeholder  :style="`width:${size}`" />
+    <input :type=type :placeholder=placeholder :style="`width:${size}`" @input="$emit('input', $event.target.value)" />
   </div>
 </template>
 
