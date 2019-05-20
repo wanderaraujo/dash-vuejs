@@ -1,10 +1,10 @@
 <template>
-  <div class="col-3 col-s-3 menu">
-    <ul>
-      <li @click="changeUrl('Company Data')"><router-link to="/">Company Data</router-link></li>
-      <li @click="changeUrl('Company Table')"><router-link to="/company-table">Company Table</router-link></li>
-      <li @click="changeUrl('Company Page')"><router-link to="/company-page">Company Page</router-link></li>
-    </ul>
+  <div class="col-3 col-s-3">
+    <nav :class="$store.getters.urlActive" v-on:click.prevent>
+      <router-link to="/" @click.native="changeUrl('Company Data')">Company Data</router-link>
+      <router-link to="/company-table" @click.native="changeUrl('Company Table')">Company Table</router-link>
+      <router-link to="/company-page" @click.native="changeUrl('Company Page')">Company Page</router-link>
+    </nav>
   </div>
 </template>
 
@@ -23,28 +23,45 @@ export default {
 }
 </script>
 
-<style>
+<style scoped>
 
-.menu li {
-  text-transform: uppercase;
+nav{
+  display:grid;
   font-size: 15px;
   border-radius: 6px;
-  border: 1px solid #D4D9E3;
-  padding: 25px;
-  width: 100%;
-  max-width: 300px;
   box-sizing: border-box;
   background-color: #FFFFFF;
 }
 
-.menu li a {
-  font-weight:500;
-  text-decoration:none;
-  color: #5D699A;
+nav a{
+  display:inline-block;
+  padding: 35px 30px;
+  color:#5D699A !important;
+  font-weight:bold;
+  font-size:16px;
+  text-decoration:none !important;
+  line-height:1;
+  text-transform: uppercase;
+  background-color:transparent;
+  border: 1px solid #D4D9E3;
+
+  -webkit-transition:background-color 0.25s;
+  -moz-transition:background-color 0.25s;
+  transition:background-color 0.25s;
 }
 
-.router-link-exact-active {
+nav a:first-child{
+  border-radius:2px 0 0 2px;
+}
+
+nav a:last-child{
+  border-radius:0 2px 2px 0;
+}
+
+nav .router-link-exact-active{
+  background-color:#FAFBFC;
   color: #505050 !important;
+  border-left: 4px solid #344279;
 }
 
 </style>

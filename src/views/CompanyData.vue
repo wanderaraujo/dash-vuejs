@@ -41,7 +41,7 @@ export default {
 }
 </script>
 
-<style scope>
+<style scoped>
 
 .box{
   border-radius: 10px;
@@ -52,6 +52,7 @@ export default {
 .box > p {
   color: #505050;
   padding-bottom: 20px;
+  font-size: 17px;
 }
 
 .label-input{

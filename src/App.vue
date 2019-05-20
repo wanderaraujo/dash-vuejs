@@ -6,7 +6,9 @@
     </div>
     <div class="row last-row">
       <SideMenu />
-        <router-view/>
+      <transition name="fade" mode="out-in">
+        <router-view />
+      </transition>
     </div>
     <Footer />
   </div>
@@ -57,6 +59,14 @@ ul {
   margin: 0;
   padding: 0;
 }
+
+.fade-enter-active, .fade-leave-active {
+  transition: opacity .3s;
+}
+.fade-enter, .fade-leave-to {
+  opacity: 0;
+}
+
 .row::after {
   content: "";
   clear: both;
