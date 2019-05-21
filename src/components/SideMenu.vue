@@ -31,6 +31,7 @@ nav{
   border-radius: 6px;
   box-sizing: border-box;
   background-color: #FFFFFF;
+  border: 1px solid #D4D9E3;
 }
 
 nav a{
@@ -43,7 +44,7 @@ nav a{
   line-height:1;
   text-transform: uppercase;
   background-color:transparent;
-  border: 1px solid #D4D9E3;
+  border-bottom: 1px solid #D4D9E3;
 
   -webkit-transition:background-color 0.25s;
   -moz-transition:background-color 0.25s;

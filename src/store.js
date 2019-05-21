@@ -36,7 +36,7 @@ export default new Vuex.Store({
       }
       commit('setDataCompany', dataCompany)
     },
-    eraseDataCompany ({ commit }, payload) {
+    eraseDataCompany ({ commit }) {
       const dataCompany = Object
       commit('setDataCompany', dataCompany)
     },
@@ -50,6 +50,9 @@ export default new Vuex.Store({
     }
   },
   getters: {
+    company (state) {
+      return state.company
+    },
     companyTable (state) {
       return state.companyTable
     },

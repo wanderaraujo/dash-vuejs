@@ -71,6 +71,8 @@ export default {
 
 .description {
   padding-top: 35px;
+  font-size: 17px;
+  color: #505050;
 }
 
 .locate {
