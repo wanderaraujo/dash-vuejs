@@ -24,7 +24,7 @@ NodeJS V10^
 
 ## Install and Run 
 
-Clone this repo https://github.com/wanderaraujo/dash-vuejs.git :
+Clone this repo https://github.com/wanderaraujo/app-dashboard.git
 
 ### `npm install`
 
