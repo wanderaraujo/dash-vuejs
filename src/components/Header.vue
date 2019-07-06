@@ -1,6 +1,6 @@
 <template>
   <div class="header">
-    <img alt="Logo" src="@/assets/intricately-logo.svg">
+    <img alt="Logo" src="@/assets/logo.png" width="60" height="60">
 </div>
 </template>
 
@@ -8,6 +8,6 @@
 .header {
   background-color: #384783;
   color: #ffffff;
-  padding: 30px;
+  padding: 17px;
 }
 </style>
