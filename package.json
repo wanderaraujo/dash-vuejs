@@ -10,7 +10,7 @@
     "test:unit:watch": "vue-cli-service test:unit --watchAll"
   },
   "dependencies": {
-    "chart.js": "^2.8.0",
+    "chart.js": "^2.9.4",
     "core-js": "^2.6.5",
     "vee-validate": "^2.2.7",
     "vue": "^2.6.10",
